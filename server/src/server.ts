@@ -1,0 +1,2 @@
+import mongoose from 'mongoose'; import app from './app.js'; import {env} from './config.js';
+mongoose.connect(env.MONGODB_URI).then(()=>{const server=app.listen(env.PORT,()=>console.log(`AuditFlow API listening on ${env.PORT}`));const stop=async()=>{await mongoose.disconnect();server.close(()=>process.exit(0));};process.on('SIGINT',stop);process.on('SIGTERM',stop);}).catch(e=>{console.error('MongoDB connection failed',e);process.exit(1)});

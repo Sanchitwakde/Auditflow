@@ -1,0 +1,57 @@
+.pagination{display:flex;align-items:center;justify-content:flex-end;gap:12px;padding:14px 20px;color:#657185;font-size:13px}.pagination .small{padding:7px 10px}.toolbar select{width:auto;min-width:150px;padding:10px 12px;border:1px solid #dce2eb;border-radius:7px;background:#fff;color:#526077}.toolbar .icon{margin-left:auto}
+.success{padding:12px;background:#e7f6f1;color:#187a67;border-radius:7px;margin:12px 0}
+.quick-actions{display:flex;flex-wrap:wrap;gap:10px;margin:-6px 0 22px}.dot{display:block;width:8px;height:8px;border-radius:50%;margin-top:6px;background:#198f82;flex:0 0 auto}.dot.blue{background:#4574d5}.dot.red{background:#d35c67}
+.detail-modal{max-width:760px}.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0}.detail-grid div{background:#f8fafc;border-radius:8px;padding:12px}.detail-grid dt{color:#8792a5;font-size:11px;text-transform:capitalize;margin-bottom:5px}.detail-grid dd{margin:0;color:#2d3a4d;word-break:break-word}
+@media(max-width:600px){.detail-grid{grid-template-columns:1fr}}
+
+/* Reference-inspired visual layer: pale operations workspace, white rail, and glass auth surface. */
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17202a;background:#eef1f2}
+body{background:#eef1f2;color:#17202a}
+.app{background:#eef1f2;min-height:100vh}
+aside{width:218px;background:#fff;color:#4f5962;border-right:1px solid #dde2e4;padding:22px 14px 15px;box-shadow:4px 0 20px rgba(30,45,55,.04)}
+.brand{margin:0 8px 28px;gap:9px}.brand span{width:28px;height:28px;padding:0;display:grid;place-items:center;border-radius:8px;background:#182127;color:#fff;font-size:12px}.brand h1{font-size:16px;color:#182127;letter-spacing:-.3px}
+nav{gap:3px}nav a{font-size:12px;color:#69737c;padding:9px 10px;border-radius:9px}nav a:hover,nav a.active{background:#e6f6f4;color:#078f83}
+.sidebar-bottom{border-top:1px solid #edf0f1;padding:13px 5px 0}.sidebar-bottom strong{color:#25313a;font-size:11px}.sidebar-bottom small{font-size:10px;color:#8a949b}.avatar{width:29px;height:29px;background:#e9f5f3;color:#078f83;font-size:11px}
+.content{background:#eef1f2}header{height:62px;background:#fff;border-bottom:1px solid #e1e5e6;padding:0 30px}.eyebrow{font-size:10px;letter-spacing:1.3px;color:#8a959c}.user-pill{font-size:12px;color:#59656c;background:#f2f5f5;border-radius:99px;padding:7px 12px}
+main{max-width:1440px;padding:27px 30px}.page-head{margin-bottom:20px}.page-head h2{font-size:25px;letter-spacing:-.7px}.muted{font-size:12px;color:#7c878d}
+.cards{grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:15px}.metric{padding:14px;border-radius:12px;box-shadow:none}.metric strong{font-size:23px}.metric small{font-size:11px}.metric-icon{width:31px;height:31px;border-radius:8px}
+.panel{border-color:#e0e5e6;border-radius:14px;box-shadow:0 2px 10px rgba(29,43,52,.035);padding:17px}.panel h3{font-size:14px;margin-bottom:13px}.grid-two{gap:12px;margin-bottom:14px}.chart{min-height:255px}
+.quick-actions{margin:-2px 0 15px}.primary{background:#e34d1c;border-radius:999px;padding:9px 15px;font-size:12px}.primary:hover{background:#c94116}.secondary{border-radius:999px;padding:9px 15px;font-size:12px;background:#fff;border:1px solid #dbe1e2;color:#4e5a61}
+.toolbar{margin-bottom:12px}.toolbar input,.toolbar select{border-radius:999px;background:#fff;border-color:#dce3e4;font-size:12px}.toolbar input{max-width:280px}.toolbar .icon{margin-left:auto;background:#fff;border:1px solid #dce3e4;border-radius:50%;width:34px;height:34px}
+th,td{padding:13px 16px;font-size:12px}th{background:#f7f9f9;font-size:10px}.badge{font-size:11px;background:#e9f5f3;color:#168b80}
+.activity-list>div{padding:10px 0}.activity-list small,td small{font-size:11px}.empty{font-size:12px}
+.auth{position:relative;overflow:hidden;background:linear-gradient(180deg,#9bd5ef 0%,#d8eef8 48%,#f4f9fb 100%);isolation:isolate}.auth::before,.auth::after{content:"";position:absolute;z-index:-1;border:1px solid rgba(255,255,255,.72);border-radius:50%;width:950px;height:500px;left:50%;top:53%;transform:translate(-50%,-50%);box-shadow:0 0 0 1px rgba(255,255,255,.2)}.auth::after{width:1250px;height:680px;top:72%;opacity:.65}.auth-card{width:min(390px,calc(100% - 32px));padding:31px 32px 27px;border:1px solid rgba(255,255,255,.78);border-radius:23px;background:rgba(255,255,255,.52);box-shadow:0 18px 40px rgba(54,104,125,.16),inset 0 1px rgba(255,255,255,.8);backdrop-filter:blur(13px)}.auth-card .brand{justify-content:center;margin:0 0 20px}.auth-card .brand span{background:#1c2429}.auth-card .brand h1{font-size:17px}.auth-card h2{text-align:center;font-size:20px;letter-spacing:-.4px;margin:8px 0 5px}.auth-card>.muted{text-align:center;line-height:1.45;margin:0 auto 20px;max-width:270px}.auth form{gap:10px}.auth label{gap:5px;font-size:0}.auth label input{height:38px;border:0;background:rgba(237,242,245,.9);border-radius:9px;padding:0 13px;font-size:12px;color:#34414a;box-shadow:inset 0 1px 2px rgba(80,100,110,.04)}.auth label input::placeholder{color:#7c878e}.auth .primary{width:100%;justify-content:center;margin-top:8px;background:#1b2025;border:1px solid #090b0c;box-shadow:0 2px 0 rgba(255,255,255,.3) inset}.auth .primary:hover{background:#30373c}.auth .link{font-size:12px;color:#315b68;margin-top:16px}.success,.error{font-size:12px}
+.detail-modal{border-radius:18px}.detail-grid div{background:rgba(248,250,250,.9)}
+@media(max-width:1000px){.cards{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:800px){aside{width:218px}.cards{grid-template-columns:1fr 1fr}header{padding:0 20px}main{padding:22px 20px}}
+@media(max-width:500px){.cards{grid-template-columns:1fr}.auth-card{padding:27px 23px}}
+.auth label{font-size:11px;color:#60717b}
+.auth-card{max-height:calc(100vh - 32px);overflow:auto}.auth-card form{width:100%}.auth-card input{max-width:100%}.auth-card .brand h1{white-space:nowrap}.auth-card h2{line-height:1.2}
+html,body,#root{width:100%;min-height:100%;margin:0}.content{width:calc(100% - 218px);min-height:100vh}main{width:100%;max-width:none;min-height:calc(100vh - 62px)}
+@media(max-width:800px){.content{width:100%}}
+.nav-backdrop{position:fixed;inset:0;background:rgba(17,25,32,.28);z-index:1;border:0}
+aside{z-index:2}
+@media(max-width:800px){aside{z-index:3;box-shadow:10px 0 30px rgba(20,35,45,.14)}.content{position:relative;z-index:0}.user-pill{max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+
+/* The sidebar toggle collapses the rail on desktop while keeping the profile area visible. */
+.app{height:100vh;min-height:100vh;overflow:hidden}
+aside{position:sticky;top:0;height:100vh;transition:width .2s ease;overflow:hidden}
+.content{width:auto;flex:1;height:100vh;min-height:0;overflow-y:auto;overflow-x:hidden}
+.nav-toggle{display:grid;margin-right:12px;color:#52616a}
+aside.collapsed{width:76px;padding-left:10px;padding-right:10px}
+aside.collapsed .brand{justify-content:center;margin-left:0;margin-right:0}
+aside.collapsed .brand h1,aside.collapsed nav a span,aside.collapsed .profile-copy{display:none}
+aside.collapsed nav a{justify-content:center;padding-left:9px;padding-right:9px}
+aside.collapsed .sidebar-bottom{justify-content:center;padding-left:0;padding-right:0}
+aside.collapsed .sidebar-bottom .icon{margin-left:0}
+@media(max-width:800px){
+  .app{height:100vh;overflow:hidden}
+  aside{position:fixed;height:100vh;top:0;left:-260px;z-index:3}
+  aside.open{left:0}
+  aside.collapsed{width:218px;padding:22px 14px 15px}
+  aside.collapsed .brand{justify-content:flex-start;margin-left:8px;margin-right:8px}
+  aside.collapsed .brand h1,aside.collapsed nav a span,aside.collapsed .profile-copy{display:block}
+  aside.collapsed nav a{justify-content:flex-start;padding:9px 10px}
+  aside.collapsed .sidebar-bottom{justify-content:flex-start;padding:13px 5px 0}
+  aside.collapsed .sidebar-bottom .icon{margin-left:auto}
+}

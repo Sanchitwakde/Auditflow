@@ -1,0 +1,36 @@
+[
+  {
+    "_id": {
+      "$oid": "672000000000000000000001"
+    },
+    "auditReference": "AUD-TEST-001",
+    "title": "Internal IT Security Audit",
+    "description": "Testing audit record for AuditFlow.",
+    "scope": "User access, passwords, and system security",
+    "department": "Information Technology",
+    "auditType": "Internal",
+    "assignedAuditor": {
+      "$oid": "672000000000000000000002"
+    },
+    "startDate": {
+      "$date": "2026-10-26T00:00:00.000Z"
+    },
+    "dueDate": {
+      "$date": "2026-11-15T00:00:00.000Z"
+    },
+    "status": "Planned",
+    "priority": "High",
+    "organizationId": {
+      "$oid": "672000000000000000000003"
+    },
+    "createdBy": {
+      "$oid": "672000000000000000000002"
+    },
+    "createdAt": {
+      "$date": "2026-10-26T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-26T00:00:00.000Z"
+    }
+  }
+]

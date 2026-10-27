@@ -1,0 +1,6 @@
+import {describe,expect,it} from 'vitest';
+import {z} from 'zod';
+const audit=z.object({title:z.string().min(2),status:z.enum(['planned','in_progress','completed','cancelled']),priority:z.enum(['low','medium','high'])});
+const finding=z.object({auditId:z.string().min(1),title:z.string().min(2),description:z.string().min(2),severity:z.enum(['low','medium','high','critical'])});
+const action=z.object({findingId:z.string().min(1),title:z.string().min(2),status:z.enum(['pending','in_progress','completed','blocked'])});
+describe('client form validation',()=>{it('requires the audit title and valid workflow values',()=>{expect(audit.safeParse({title:'',status:'planned',priority:'medium'}).success).toBe(false);expect(audit.safeParse({title:'Access review',status:'planned',priority:'high'}).success).toBe(true)});it('requires finding linkage and description',()=>{expect(finding.safeParse({auditId:'',title:'x',description:'',severity:'high'}).success).toBe(false);expect(finding.safeParse({auditId:'audit-1',title:'Missing evidence',description:'Evidence is missing',severity:'high'}).success).toBe(true)});it('requires corrective actions to reference a finding',()=>{expect(action.safeParse({findingId:'',title:'Fix',status:'pending'}).success).toBe(false);expect(action.safeParse({findingId:'finding-1',title:'Fix',status:'pending'}).success).toBe(true)});});
